@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="aicomps">
+    <!-- link to google font and below it link to local font-->
+    <link href="https://fonts.googleapis.com/css?family=Helvetica Neue" rel="stylesheet">
+    <!-- link to Font awesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- link to Font awesome css locally-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+ </head>
+
+<body>
+    <div class="container-wrapper">
+        <header>
+            <div class="social_media_wrapper">
+	            <ul>
+		            <li><a href="https://x.com/carencareC"><i class="fa fa-twitter"></i></a></li>
+	            </ul>		
+            </div>    
+        </header>
+        <div class="sidebar_wrapper">
+            <div class="logo_section">
+                <img class="logo" alt="logo" src="images/logo.png">
+            </div>
+            <div class="navigation">
+                <nav class="nav-lines-effect">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="services.html">OUR SERVICES</a></li>
+                        <li><a href="contactus.html">CONTACT US</a></li>						
+                    </ul>
+                </nav>
+            </div>    
+        </div>
+        <div class="content_wrapper">
+            <div class="banner_wrapper">
+                <div class="mySlides fadeit">
+                  <img src="images/banner1.png" alt="banner" style="max-width:100%;" />
+              </div>
+              <div class="mySlides fadeit">
+                  <img src="images/banner2.png" alt="banner" style="max-width:100%;" />
+              </div>
+              <div class="mySlides fadeit">
+                  <img src="images/banner3.png" alt="banner" style="max-width:100%;" />
+              </div>
+            </div>
+              <br>
+                  <div style="text-align:center">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                  </div>
+            
+            <script>
+              var slideIndex = 0;
+              showSlides();
+            
+              function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot" , "");
+                for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+                 }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+                }
+            </script>
+            <div class="row">
+                <div class="column">
+                    <div class="column-child-1st">
+                        <img class="column-image" alt="services image" src="images/services_image.png"/>
+                    </div> 
+                     <div class="column-child-2nd">
+                     </div>  
+                     <div class="column-child-3rd">
+                        <h3>At Caren Care Centre,  We exist To be instrumental in the healing of the mentally afflicted and the fight against substance abuse</h3>
+                        <br>
+                        <h2 class="content-button"><a href="services.html">Learn More</a></h2>        
+                     </div>
+            </div> <!-- end of row div -->
+        </div><!-- end of the content wrapper -->
+    </div><!-- end of the container wrapper -->
+        <div class="clearfooter"></div>  
+        <div class="footer">   
+            <footer class="footer-distributed" style="text-align: center;">
+                <h2>Caren Care Centre</h2>
+                <p class="footer-links">
+                    <a href="index.html">Home</a>
+                    ·
+                    <a href="services.html">Services</a>
+                    ·
+                    <a href="contactus.html">Contact us</a>
+                </p>         
+                <div class="footer-icons">
+                  <h2> Follow us on</h2>
+                    <a href="https://x.com/carencareC"><i class="fa fa-twitter"></i></a>	
+                </div>
+                <div style="text-decoration: none; color: white;font-family:Arial Narrow;">
+                    <h4>Caren Care Centre&copy;2025</h4>
+                    <h5>designed by <a class="coderlink" href="https://aicontechnology.github.io/aicontechnology/">aiconTech</a></h5>
+                 </div>
+            </footer>
+        </div>   
+</body>
+ 
+</html> 

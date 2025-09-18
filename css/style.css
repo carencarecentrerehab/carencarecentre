@@ -1,0 +1,893 @@
+* { margin: 0; padding: 0; box-sizing: border-box;}                                     
+                                        
+body {font-family: 'Helvetica Neue', 'Roboto Thin', 'Arial';background:#A349A4;}                                     
+                                        
+header{text-align: center; padding-top: 0px;}                                       
+                                        
+.social_media_wrapper{width: 100%; height: 50px; background:#A349A4; color: white;}                                     
+                                        
+.social_media_wrapper ul li {display: inline-block;padding: 15px;float: right; font-size: 16px;text-decoration: none;}                                      
+                                        
+.social_media_wrapper a{                                        
+    color: #BBBBFF;                                         
+    width: 35px;                                        
+    height: 35px;                                       
+    cursor: pointer;                                        
+    border-radius: 2px;                                     
+    font-size: 20px;                                        
+    color: #BBBBFF;                                     
+    text-align: center;                                     
+    line-height: 35px;                                      
+    margin-right: 3px;                                      
+    margin-bottom: 5px;                                     
+}                                       
+                                        
+.social_media_wrapper a:hover{background-color:#ffffff;transition:0.2s;color:#BBBBFF;}                                      
+                                        
+.social_media_wrapper a.active{background-color:#EAF0F2;}                                       
+                                        
+.sidebar_wrapper{                                       
+    position: relative;                                 
+    width: 25%;                                     
+    height: auto;                                   
+    float: left;                                    
+    background-color: #A349A4;                                  
+    text-align: center;                                 
+    color: white;                                   
+}                                       
+                                        
+.content_wrapper{                                       
+    position: relative;                                 
+    width: 75%;                                 
+    height: auto;                                   
+    float: left;                                    
+    background-color: #ffffff;                                  
+    border-top-left-radius: 80px;                                   
+    } 
+.content-column{position: relative;float:left;width: 50%;height:30%;}
+.content-row:after {content: "";display: table;clear: both;} 
+@media screen and (max-width: 600px){.content-column {width: 100%;}}
+
+.contactus-column{float:left;width: 25%;padding: 0.1875em;height: 21.875em;border: 1px solid #000000;}
+.contactus-row:after {content: "";display: table;clear: both;}                                 
+                                        
+.logo {                                     
+        max-width: 100%;                                        
+        height: auto ;                                      
+}                                       
+                                        
+.logo_section h1{color: #BBBBFF;}                                       
+                                        
+.cl-effect-4{                                       
+    position: relative;                                     
+    margin-right: 15px;                                     
+    padding-top: 15px;                                      
+    padding-left: 15px;                                     
+    float: left;                                        
+    display: block;                                     
+    text-decoration: none;                                      
+}                                       
+                                        
+.cl-effect-4 a{                                     
+     color: #BBBBFF;                                        
+     text-decoration: none;                                     
+     text-align: center;                                        
+     outline: none;                                     
+     letter-spacing: 1px;                                       
+     font-size: 0.8em;                                      
+     font-family: 'Cinzel';                                     
+}                                       
+                                        
+nav ul li {                                     
+    position: relative;                                     
+    margin: 15px 25px;                                      
+    display: block;                                     
+    text-decoration: none;                                      
+}                                       
+                                        
+nav a{                                      
+ color: #BBBBFF;                                        
+     text-decoration: none;                                     
+     text-align: center;                                        
+    outline: none;                                      
+     letter-spacing: 1px;                                       
+     font-size: 2vw;                                        
+     font-family: 'Cinzel';                                     
+}                                       
+                                        
+nav a:hover,                                        
+nav a:focus {                                       
+    outline: none;                                      
+}                                       
+                                        
+.nav-lines-effect a {                                       
+    padding: 0 20px;                                        
+    height: 45px;                                       
+    line-height: 45px;                                      
+}                                       
+                                        
+.nav-lines-effect a::before,                                        
+.nav-lines-effect a::after {                                        
+    position: absolute;                                     
+    width: 45px;                                        
+    height: 2px;                                        
+    background: #BBBBFF;                                        
+    content: '';                                        
+    opacity: 0.05;                                      
+    -webkit-transition: all 0.3s;                                       
+    -moz-transition: all 0.3s;                                      
+    transition: all 0.3s;                                       
+}                                       
+                                        
+.nav-lines-effect a::before {                                       
+    top: 0;                                     
+    left: 0;                                        
+    -webkit-transform: rotate(90deg);                                       
+    -moz-transform: rotate(90deg);                                      
+    transform: rotate(90deg);                                       
+    -webkit-transform-origin: 0 0;                                      
+    -moz-transform-origin: 0 0;                                     
+    transform-origin: 0 0;                                      
+}                                       
+                                        
+.nav-lines-effect a::after {                                        
+    right: 0;                                       
+    bottom: 0;                                      
+    -webkit-transform: rotate(90deg);                                       
+    -moz-transform: rotate(90deg);                                      
+    transform: rotate(90deg);                                       
+    -webkit-transform-origin: 100% 0;                                       
+    -moz-transform-origin: 100% 0;                                      
+    transform-origin: 100% 0;                                       
+}                                       
+                                        
+.nav-lines-effect a:hover::before,                                      
+.nav-lines-effect a:hover::after,                                       
+.nav-lines-effect a:focus::before,                                      
+.nav-lines-effect a:focus::after {                                      
+    opacity: 1;                                     
+}                                       
+                                        
+.nav-lines-effect a:hover::before,                                      
+.nav-lines-effect a:focus::before {                                     
+    left: 50%;                                      
+    -webkit-transform: rotate(0deg) translateX(-50%);                                       
+    -moz-transform: rotate(0deg) translateX(-50%);                                      
+    transform: rotate(0deg) translateX(-50%);                                       
+}                                       
+                                        
+.nav-lines-effect a:hover::after,                                       
+.nav-lines-effect a:focus::after {                                      
+    right: 50%;                                     
+    -webkit-transform: rotate(0deg) translateX(50%);                                        
+    -moz-transform: rotate(0deg) translateX(50%);                                       
+    transform: rotate(0deg) translateX(50%);                                        
+}                                       
+/* Slideshow container */
+.banner_wrapper{                                        
+    position: relative;                                     
+    max-width: 100%;                                        
+    height: auto;                                       
+    float: left;                                        
+    background-color: #ffffff;                                                                           
+    margin: auto;
+    border-top-left-radius: 5em;
+    }                                       
+
+.banner-image{                                      
+    position: relative;                                     
+    width: 100%;                                        
+    height: 100%;                                       
+}                                       
+
+.banner-header {                                        
+    position: absolute;                                     
+    font-family: 'Roboto', sans-serif;                                      
+    font-size: 2vw;                                     
+    color: #A349A4;                                     
+    top: 6%;                                        
+    left:5%;                                        
+ }
+ /* The dots/bullets/indicators for the first content-column */
+        .dot {
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #333399;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+
+        .dot1 {
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #333399;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.8s ease;
+        }
+
+        .active {
+          background-color: #A349A4;
+        }
+
+        /* Fading animation */
+        .fadeit {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 6.5s;
+          animation-name: fade;
+          animation-duration: 6.5s;
+        }
+
+        @-webkit-keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+          .text {font-size: 11px}
+        }
+
+/* Styling for the graphics design slide show */
+
+.slide-container{max-width: 220px;position: relative; margin: auto; text-align: center; color: white;}
+
+.theslides{position: absolute;}
+
+.fadein img{
+    -webkit-animation-name: fade;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 30s;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
+}
+
+@-webkit-keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+#f1 {-webkit-animation-delay: -24s;}
+
+#f2 {-webkit-animation-delay: -20s;}
+
+#f3 {-webkit-animation-delay: -16s;}
+
+#f4 {-webkit-animation-delay: -12s;}
+
+#f5 {-webkit-animation-delay: -8s;}
+
+#f6 {-webkit-animation-delay: -4s;}
+
+/* Styling for the IT hardware slide show */
+.fadein1 img{
+    -webkit-animation-name: fade;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 16s;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 16s;
+}
+
+
+#d1 {-webkit-animation-delay: -12s;}
+
+#d2 {-webkit-animation-delay: -8s;}
+
+#d3 {-webkit-animation-delay: -4s;}
+                                      
+                                        
+.column {                                       
+    position: relative;                                     
+    float: left;                                        
+    width: 100%;                                        
+    text-align: center;                                     
+    height: 476px;                                      
+    background: transparent;                                        
+    margin-top: -12%;                                       
+    }                                       
+                                        
+ .column-image{                                     
+    max-width: 100%;                                        
+    height: auto;                                       
+ }                                      
+                                        
+.column-child-1st{                                      
+    height: 20%;                                        
+    text-align: center;                                     
+    background-color: inherit;                                      
+    }                                       
+                                        
+.column-child-2nd{                                      
+    border-top-left-radius: 25px;                                       
+    border-top-right-radius: 25px;                                      
+    height: 22%;                                        
+    text-align: center;                                     
+    color: white;                                       
+    background: #A349A4;                                        
+    border-left: 1px solid #BBBBFF;                                     
+    border-right: 1px solid #BBBBFF;                                        
+    }                                       
+                                        
+.column-child-2rd-headings{top: 5%;}                                        
+                                        
+.column-child-3rd{                                      
+    height: 58%;                                        
+    text-align: justify;                                        
+    padding-left: 5px;                                      
+    padding-right: 5px;                                     
+    color: white;                                       
+    font-family: 'Roboto Thin';                                     
+    font-size: 1.1em;                                       
+    background: #A349A4;                                        
+    border-left: 1px solid #BBBBFF;                                     
+    border-right: 1px solid #BBBBFF;                                        
+    }                                       
+                                        
+.column-child-3rd p{padding : 5px;}                                     
+                                        
+.column-child-3rd h3{color: #BBBBFF; text-align: center;}                                       
+                                        
+.content-button {                                       
+    color: #BBBBFF;                                     
+     text-align: center;                                        
+     position: absolute;                                        
+     font-size: 1.1em;                                      
+     left: 43.5% ;                                                                       
+}                                       
+                                        
+.content-button a{                                      
+    color:inherit;                                      
+    text-decoration: none;                                      
+    display: inline-block;                                      
+    border: 1px solid #BBBBFF;                                      
+    padding: 10px 15px;                                     
+    border-radius: 3px;                                     
+   }                                        
+                                        
+.content-button a:hover{                                        
+    background-color:#BBBBFF;                                       
+    transition:0.2s;                                        
+    color:#fff;                                     
+}                                       
+ .row:after {                                       
+  content: "";                                      
+  display: table;                                       
+  clear: both;                                      
+}                                       
+                                        
+ .clearfooter {                                     
+    clear: both;                                        
+    }                                       
+.services-header {                                      
+    position: absolute;                                     
+    font-family: 'Roboto', sans-serif;                                      
+    font-size: 2vw;                                     
+    color: #A349A4;                                     
+    top: 3%;                                        
+    left:5%;                                        
+ }                                      
+                                        
+.services-column{                                       
+  float:left;                                       
+  width: 25%;                                       
+  padding: 10px;                                        
+  height: auto;                                     
+}                                       
+                                        
+.services-column-child{                                     
+    position: relative;                                     
+    float: left;                                        
+    border: 1px solid #BBBBFF;                                      
+    width: 100%;                                        
+    text-align: center;                                     
+    height: 520px;                                      
+    background: transparent;                                        
+    margin-top: 20%;                                        
+    margin-left: 1%;                                        
+}                                       
+.services-row:after {                                       
+  content: "";                                      
+  display: table;                                       
+  clear: both;                                      
+}                                       
+                                        
+@media screen and (max-width: 600px){                                       
+  .services-column {                                        
+    width: 100%;                                        
+  }                                     
+}                                       
+                                        
+/* styling for the mygallery page */                                        
+                                        
+.mygallery-header-button {                                      
+    position: absolute;                                     
+    color: #000;                                     
+    font-family: 'Cinzel', sans-serif;                                      
+    font-size: 2.5vw;   
+    text-align: center;                                    
+}                                       
+                                        
+.mygallery-header-button a{                                     
+    color:inherit;                                      
+    text-decoration: none;                                      
+    display: inline-block;                                      
+    border: 1px solid #BBBBFF;                                      
+    padding: 5px 5px;                                       
+    border-radius: 3px;                                     
+   }                                        
+                                        
+.mygallery-header-button a:hover{                                       
+    background-color:#BBBBFF;                                       
+    transition:0.2s;                                        
+    color:#fff;                                     
+}                                       
+                                        
+.mygallery-column{                                      
+  float:left;                                       
+  width: 25%;                                       
+  padding: 10px;                                        
+  height: auto;                                     
+}                                       
+                                        
+.mygallery-column-child{                                        
+    position: relative;                                     
+    float: left;                                        
+    border: 1px solid #BBBBFF;                                      
+    width: 100%;                                        
+    text-align: center;                                     
+    height: 10em;                                      
+    background: #A349A4;                                        
+    margin-top: 10%;                                        
+    margin-left: 1%;                                        
+}                                       
+                                        
+.mygallery-column-image{                                        
+    position: absolute;                                     
+    margin-top: 3%;                                     
+    left: 0;                                        
+    width: 100%;                                        
+    max-height:82%;                                     
+    cursor: pointer;                                        
+    border:10px solid #ffffff; -webkit-transform: rotateY(30deg);                                       
+    -moz-box-shadow:0 3px 1px #888; -webkit-box-shadow:0 3px 1px #888;                                      
+    -webkit-transition-property: transform; -webkit-transition-duration: 0.5s;                                      
+}                                       
+                                        
+.mygallery-column-image:hover img{                                      
+    {                                       
+    -webkit-transform: rotateY(0deg);                                       
+     }                                      
+                                        
+.mygallery-column-child{                                        
+    background: #ffffff;                                        
+    }                                       
+}                                       
+                                        
+                                        
+                                        
+.mygallery-column-buttons{                                      
+    position: absolute;                                     
+    border: 1px solid #A349A4;                                      
+    width: 100%;                                        
+    height: 40px;                                       
+    background: black;                                      
+    cursor: pointer;                                        
+    bottom: 0;                                      
+}                                       
+                                        
+                                        
+.mygallery-thebutton{                                       
+    margin-top:1%;                                      
+     color: #ffffff;                                        
+     background-color: #A349A4;                                     
+     text-align: center;                                        
+     border-radius: 5px;                                        
+     padding: 5px 5px;                                      
+}                                       
+                                        
+.mygallery-thebutton a{                                     
+    color: white;                                       
+    text-decoration: none;                                      
+   }                                        
+                                        
+.mygallery-thebutton:hover{                                     
+    background-color:#BBBBFF;                                       
+    border-radius: 5px;                                     
+    transition:0.2s;                                        
+}                                       
+.mygallery-row:after {                                      
+  content: "";                                      
+  display: table;                                       
+  clear: both;                                      
+}                                       
+                                        
+@media screen and (max-width: 600px){                                       
+  .mygallery-column {                                       
+    width: 100%;                                        
+  }                                     
+}                                       
+                                        
+/* This is the styling for the footer*/                                     
+.footer-distributed{                                        
+    background-color: #A349A4;                                      
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);                                        
+    box-sizing: border-box;                                                                          
+    width: 100%;                                        
+    font: bold 16px sans-serif;                                     
+    text-align: left;                                       
+    padding: 50px 60px 40px;                                        
+    overflow: hidden;                                       
+}                                       
+                                        
+/* Footer left */                                       
+.footer-distributed .footer-left{                                       
+    float: left;                                        
+}                                       
+                                        
+/* The company logo */                                      
+.footer-distributed h3{                                     
+    color:  #ffffff;                                        
+    font: normal 36px 'Cinzel';                                     
+    margin: 0 0 10px;                                       
+}                                       
+                                        
+.footer-distributed h3 span{                                        
+    color:  #BBBBFF;                                        
+}                                       
+                                        
+/* Footer links */                                      
+                                        
+.footer-distributed .footer-links{                                      
+    color:  #ffffff;                                        
+    margin: 0 0 10px;                                       
+    font: normal 16px 'Cinzel';                                     
+    padding: 0;                                     
+}                                       
+                                        
+.footer-distributed .footer-links a{                                        
+    display:inline-block;                                       
+    line-height: 1.8;                                       
+    text-decoration: none;                                      
+    color:  white;                                        
+    font: normal 14px 'Cinzel';                                     
+}                                       
+                                        
+.footer-distributed .footer-links a:hover{                                      
+      color:  #BBBBFF;                                      
+}                                       
+                                        
+/* Footer social icons */                                       
+.footer-distributed .footer-icons{                                      
+    margin-top: 20px;                                       
+}                                       
+                                        
+.footer-distributed .footer-icons a{                                        
+    display: inline-block;                                      
+    width: 35px;                                        
+    height: 35px;                                       
+    cursor: pointer;                                        
+    background-color:  #ffffff;                                     
+    border-radius: 2px;                                     
+    font-size: 20px;                                        
+    color: #BBBBFF;                                     
+    text-align: center;                                     
+    line-height: 35px;                                      
+    margin-right: 3px;                                      
+    margin-bottom: 5px;                                     
+}                                       
+                                        
+.footer-distributed .footer-icons a:hover{                                      
+    background-color:  #BBBBFF;                                     
+    color: #ffffff;                                     
+}                                       
+                                        
+/* Footer Right */                                      
+.footer-distributed .footer-right{                                      
+    float: right;                                       
+}                                       
+                                        
+.footer-distributed .footer-right p{                                        
+    display: inline-block;                                      
+    vertical-align: top;                                        
+    margin: 15px 42px 0 0;                                      
+    color: #BBBBFF;                                     
+    font: normal 14px 'Cinzel';                                     
+}                                       
+                                        
+.footer-distributed .footer-companynames{                                       
+    float: left;                                        
+}                                       
+                                        
+.footer-distributed .footer-companynames p{                                     
+                                        
+    color: #BBBBFF;                                     
+    font: normal 14px 'Cinzel';                                     
+}  
+.footer-distributed a{   
+    text-decoration: none;
+    color: #000;
+}                                     
+                                        
+/* -----Making the website responsive----- */                                       
+@media (min-width: 676px) {                                     
+    .cl-effect-4{                                       
+        display: none ;                                     
+    }                                       
+}                                       
+                                        
+@media (max-width: 1250px) {                                        
+    .column-child-3rd{                                      
+    font-family: 'Roboto Thin';                                     
+    font-size: 1em;                                     
+    }                                       
+}                                       
+                                        
+@media (max-width: 1041px) {                                        
+    .column-child-3rd{                                      
+    font-family: 'Roboto Thin';                                     
+    font-size: 0.8em;                                       
+    }                                       
+}                                       
+                                        
+@media (max-width: 744px) {                                     
+    .column-child-2nd{                                      
+    border-top-left-radius: 25px;                                       
+    border-top-right-radius: 25px;                                      
+    height: 22%;                                        
+    text-align: center;                                     
+    color: white;                                       
+    background: #A349A4;                                     
+    border-left: 1px solid #BBBBFF;                                     
+    border-right: 1px solid #BBBBFF;                                        
+    }                                       
+}                                       
+                                        
+ /* ------------Footer---------- */                                     
+@media (max-width: 680px) {                                     
+    .footer-distributed {                                       
+        font: bold 12px sans-serif;                                           
+            background-color: #A349A4;                                      
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);                                        
+            box-sizing: border-box;                                                                       
+            width: 100%;                                        
+            font: bold 16px sans-serif;                                     
+            text-align: left;                                       
+            padding: 50px 60px 40px;                                        
+            overflow: hidden;                                       
+        }                                                                           
+                                        
+    .footer-distributed .footer-company-name{                                       
+        font-size: 12px;                                        
+    }                                       
+                                        
+    .footer-distributed form input,                                     
+    .footer-distributed form textarea{                                      
+        width: 250px;                                       
+    }                                       
+                                        
+    .footer-distributed form button{                                        
+        padding: 10px 35px;                                     
+    }  
+}                                     
+                                      
+                                        
+@media (max-width: 675px) {                                     
+    .footer-distributed{                                        
+        padding: 30px;                                      
+    }                                       
+                                        
+    .footer-distributed .footer-left,                                       
+    .footer-distributed .footer-right{                                      
+        float: none;                                        
+        max-width: 300px;                                       
+        margin: 0 auto;                                     
+    }                                       
+                                        
+    .footer-distributed .footer-left{                                       
+        margin-bottom: 40px;                                        
+    }                                       
+                                        
+    .footer-distributed .footer-left h3{                                        
+           font-size: 3vw;                                      
+    }                                       
+                                        
+    .footer-distributed .footer-left p{                                     
+           font-size: 2vw;                                      
+         }                                      
+                                        
+    .footer-distributed form{                                       
+        margin-top: 30px;                                       
+    }                                       
+                                        
+    .footer-distributed form{                                       
+        display: block;                                     
+    }                                       
+                                        
+    .footer-distributed form button{                                        
+        float: none;                                        
+    }                                       
+}                                       
+                                        
+/* Styling for the contacts page */                                     
+.banner-column{                                     
+    position: relative;                                     
+    width: 100%;                                        
+    height: 100%;                                       
+    float: left;                                        
+    border-top-left-radius: 5em;                                       
+    text-align: center;                                   
+    }                                       
+.contactus-image{                                       
+    padding-top: 1%;                                        
+    position: relative;                                     
+    max-width: 100%;                                        
+    height: 100%;                                       
+}                                       
+                                        
+.contactus-column{                                      
+ position: relative;                                     
+    width: 100%;                                        
+    height: 100%;                                       
+    float: left;                                                                              
+    text-align: center;                                         
+}   
+
+.content_wrapper .banner-column ul li a i  {
+    font-weight: 400;
+    text-decoration: none;
+}
+                                        
+@media screen and (max-width: 845px){                                       
+  .contactus-column {                                       
+    width: 100%;                                        
+  }                                     
+}                                       
+    
+
+/* -----Changing the layout and navigation for screen size below 675px up to cellphone size----- */                                         
+                                        
+@media screen and (max-width: 675px) {                                      
+    .nav-lines-effect{                                      
+        display: none ;                                     
+    }                                       
+    .social_media_wrapper ul{                                       
+        display: none ;                                     
+    }                                       
+                                        
+    nav ul li {                                     
+    position: relative;                                     
+    margin: 15px 25px;                                      
+    display: inline-block;                                      
+    text-decoration: none;                                      
+    }                                       
+                                        
+    nav a{                                      
+     color: #BBBBFF;                                        
+     text-decoration: none;                                     
+     text-align: center;                                        
+     outline: none;                                     
+     letter-spacing: 1px;                                       
+     font-size: 2vw;                                        
+     font-family: 'Cinzel';                                     
+    }                                       
+                                        
+    .column {                                       
+     width: 100%;                                       
+     height: 200px;                                     
+      margin-top: -3%;                                      
+  }                                     
+                                        
+  .product-column-child {                                       
+     width: 100%;                                       
+     height: 300px;                                     
+  }                                     
+                                        
+                                        
+                                        
+   .column-image{                                       
+     display: none;                                     
+     }                                      
+                                        
+                                        
+    .column-child-1st{                                      
+      height: 5%;                                       
+    }                                       
+                                        
+    .column-child-2nd{                                      
+     border-top-left-radius: 0px;                                       
+     border-top-right-radius: 0px;                                      
+     border-top: 1px solid #BBBBFF;                                     
+     height: 12%;                                       
+                                        
+    }                                       
+                                        
+    .column-child-2rd-headings{top: 0%;}                                        
+                                        
+    .column-child-3rd{                                      
+    height: 83%;                                        
+     font-size: 2vw;                                        
+                                        
+    }                                       
+    .content-button {                                       
+    font-size: 3vw;                                     
+                                        
+    }                                       
+                                        
+    @media screen and (max-width: 550px){                                       
+    .column-child-3rd{                                      
+    font-size: 2.5vw;                                       
+        }                                       
+    }                                       
+                                        
+    @media screen and (max-width: 400px){                                       
+    .column-child-3rd{                                      
+    font-size: 2.9vw;                                       
+        }                                       
+    }                                       
+                                        
+     @media screen and (max-width: 327px){                                      
+    .column-child-3rd{                                      
+    font-size: 3vw;                                     
+        }                                       
+    }                                       
+                                        
+     @media screen and (max-width: 290px){                                      
+    .column-child-3rd{                                      
+    font-size: 3.25vw;                                      
+        }                                       
+    }                                       
+      @media screen and (max-width: 266px){                                     
+    .column-child-3rd{                                      
+    font-size: 3.5vw;                                       
+        }                                       
+    }                                       
+                                        
+.services-column{                                       
+  float:left;                                       
+  width: 25%;                                       
+  padding: 10px;                                        
+  height: auto;                                     
+}                                       
+                                        
+.services-column-child{                                     
+    position: relative;                                     
+    float: left;                                        
+    border: 1px solid #BBBBFF;                                      
+    width: 100%;                                        
+    text-align: center;                                     
+    height: 520px;                                      
+    background: transparent;                                        
+    margin-top: 20%;                                        
+    margin-left: 1%;                                        
+}                                       
+.services-row:after {                                       
+  content: "";                                      
+  display: table;                                       
+  clear: both;                                      
+}                                       
+                                        
+@media screen and (max-width: 600px){                                       
+  .services-column {                                        
+    width: 100%;                                        
+  }                                     
+}                                       
